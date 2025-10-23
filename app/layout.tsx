@@ -3,9 +3,9 @@ import "./globals.css"
 
 import type React from "react"
 
-import { Geist } from "next/font/google"
+import { Inter } from "next/font/google"
 
-const geist = Geist({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "FLASH USDTS SHOP - Premium Crypto Tools",
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geist.className} font-sans antialiased`}>{children}</body>
+      <body className={`${inter.className} font-sans antialiased`}>{children}</body>
     </html>
   )
 }
